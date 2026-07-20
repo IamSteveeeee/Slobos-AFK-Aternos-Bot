@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "boxpvp102938.exaroton.me",
+    "ip": "boxpvp102938.exaroton.me:37871",
     "port": 37871,
     "version": "",
     "try-creative": false
