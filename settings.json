@@ -1,87 +1,58 @@
 {
-  "name": "AFK Bot",
-  "bot-account": {
-    "username": "Duybruh",
-    "password": "",
-    "type": "offline"
-  },
   "server": {
-    "ip": "boxpvp102938.exaroton.me:37871",
-    "port": 37871,
-    "version": "",
-    "try-creative": false
+    "host": "boxpvp102938.aternos.me",
+    "port": 26331,
+    "version": "26.0",
+    "auth": "offline"
   },
-  "position": {
-    "enabled": true,
-    "x": 0,
-    "y": 100,
-    "z": 0
+  "bot": {
+    "baseUsername": "Duybruh1029384756"
   },
-  "utils": {
-    "auto-auth": {
+  "features": {
+    "autoReconnect": {
       "enabled": true,
-      "password": "chalol78"
+      "delay": 5000,
+      "kickDelay": 10000
     },
-    "anti-afk": {
-      "enabled": true,
-      "sneak": true
+    "randomUsernameOnKick": {
+      "enabled": false,
+      "length": 4
     },
-    "chat-messages": {
+    "antiAfk": {
       "enabled": true,
-      "repeat": true,
-      "repeat-delay": 120,
+      "minInterval": 5000,
+      "maxInterval": 15000,
+      "actions": {
+        "jump": true,
+        "sneak": true,
+        "lookAround": true,
+        "swingArm": true,
+        "walkRandomly": true,
+        "sprintForward": false,
+        "toggleWalk": true,
+        "mineBlockRandomly": false,
+        "placeBlockRandomly": false,
+        "useItem": false,
+        "switchHotbar": true,
+        "dropItem": false,
+        "interactWithEntity": true,
+        "openContainer": false,
+        "inventoryInteraction": true,
+        "randomSequence": true
+      }
+    },
+    "autoChat": {
+      "enabled": true,
+      "interval": 60000,
       "messages": [
-        "I'm a regular player",
-        "Subscribe to Slobos!",
-        "I like to play Minecraft!"
+        "Hello!",
+        "Bo may la bot afk",
+        "Tao afk ne kid con cam lam phien."
       ]
     },
-    "chat-log": true,
-    "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
-  },
-  "movement": {
-    "enabled": true,
-    "circle-walk": {
+    "webDashboard": {
       "enabled": true,
-      "radius": 4,
-      "speed": 3000
-    },
-    "look-around": {
-      "enabled": true,
-      "interval": 5000
-    },
-    "random-jump": {
-      "enabled": true,
-      "interval": 10000
+      "port": 3000
     }
-  },
-  "modules": {
-    "avoidMobs": true,
-    "combat": true,
-    "beds": false,
-    "chat": true,
-    "console-commands": true
-  },
-  "combat": {
-    "attack-mobs": true,
-    "auto-eat": true
-  },
-  "beds": {
-    "pick-up-day": false,
-    "place-night": false
-  },
-  "discord": {
-    "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
-    "events": {
-      "connect": true,
-      "disconnect": true,
-      "chat": false
-    }
-  },
-  "chat": {
-    "respond": true
   }
 }
